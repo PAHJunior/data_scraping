@@ -6,7 +6,7 @@ var request = require('request')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  url = 'https://www.vestibulinhoetec.com.br/home/'
+  url = 'https://www.al.sp.gov.br/deputado/lista/'
   request(url, function(error, response, html) {
     res.send(html)
   })
